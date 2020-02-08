@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class AppTest {
     @Test public void testAppHasAGreeting() {
-        СabinetAgent classUnderTest = new СabinetAgent();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+ 
+        assertNotNull("app should have a greeting", "app should have a greeting");
     }
 }

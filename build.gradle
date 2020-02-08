@@ -73,7 +73,8 @@ dependencies {
 	compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
     
  	// https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14
-	
+	 // https://mvnrepository.com/artifact/commons-validator/commons-validator
+	compile group: 'commons-validator', name: 'commons-validator', version: '1.6'
  	
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'

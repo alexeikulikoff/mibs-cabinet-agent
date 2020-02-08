@@ -83,7 +83,10 @@ public class СabinetAgent extends Actions{
 			DeliverCallback deliveryCallback = (consumerTag, delivery) -> {
 				
 				RabbitmqCommandMessage<?> msg = (RabbitmqCommandMessage<?>) SerializationUtils.deserialize(delivery.getBody());
-				commands.get(msg.getCommand()).accept(msg);
+				
+				System.out.println( msg.getCommand() );
+				
+				commands.get( msg.getCommand() ).accept( msg );
 			};
 			channel.basicConsume(localInQueue, true, deliveryCallback, consumerTag -> { });
 			channel.basicConsume(inboundQueue, true, deliveryCallback, consumerTag -> { });
