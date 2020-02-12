@@ -13,7 +13,7 @@ plugins {
     // Apply the application plugin to add support for building a CLI application
     id 'application'
 }
-def mainClass = "mibs.init.cabinet.СabinetAgent"
+def mainClass = "mibs.init.cabinet.CabinetAgent"
 jar {
     manifest {
         attributes("Implementation-Title": "Gradle",
@@ -28,10 +28,11 @@ task fatJar(type: Jar) {
         	"Implementation-Version": "1.0",
         	"Main-Class": mainClass)
     }
-    baseName = project.name + '-all'
+    archiveBaseName = project.name
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
@@ -82,5 +83,5 @@ dependencies {
 
 application {
     // Define the main class for the application
-    mainClassName = 'mibs.init.cabinet.СabinetAgent'
+    mainClassName = 'mibs.init.cabinet.CabinetAgent'
 }
