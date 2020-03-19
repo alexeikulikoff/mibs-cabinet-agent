@@ -84,7 +84,7 @@ public abstract class Actions implements Cabinet{
 			byte[] rc = SerializationUtils.serialize ( u );
 			try {
 				channel.basicPublish( directExchange, masterRoutingKey, true, null, rc );
-				logger.trace("Public to exchange " + directExchange + " message:  " + u);
+				logger.trace("Public to exchange " + directExchange + " message command:  " + u.getCommand() + " routing key: " + u.getRoutingKey());
 			} catch (IOException e) {
 				logger.error("Error! Public to queue localin failed with message: " + e.getMessage());
 			}
@@ -96,7 +96,9 @@ public abstract class Actions implements Cabinet{
 		
 			try {
 				channel.basicPublish( directExchange, masterRoutingKey, true, null, rc );
-				logger.trace("Public to exchange " + directExchange + " message:  " + u);
+	       logger.trace("Public to exchange " + directExchange + " message command:  " + u.getCommand() + " routing key: " + u.getRoutingKey());
+
+				
 			} catch (IOException e) {
 				logger.error("Error! Public to queue localin failed with message: " + e.getMessage());
 			}
@@ -121,8 +123,11 @@ public abstract class Actions implements Cabinet{
 			byte[] rc = SerializationUtils.serialize ( u );
 			try {
 				channel.basicPublish( "", localOutQueue , true, null, rc );
-				logger.trace("Public to queue " + localOutQueue + " message:  " + u);
+				
+        logger.trace("Public to queue " + localOutQueue + " message command:  " + u.getCommand() + " routing key: " + u.getRoutingKey());
+
 			} catch (IOException e) {
+			  
 				logger.error("Error! Public to queue localin failed with message: " + e.getMessage());
 			}
 		});
@@ -130,7 +135,9 @@ public abstract class Actions implements Cabinet{
 			byte[] rc = SerializationUtils.serialize ( u );
 			try {
 				channel.basicPublish( "", localOutQueue , true, null, rc );
-				logger.trace("Public to queue " + localOutQueue + " message:  " + u);
+
+				logger.trace("Public to queue " + localOutQueue + " message command:  " + u.getCommand() + " routing key: " + u.getRoutingKey());
+
 			} catch (IOException e) {
 				logger.error("Error! Public to queue localin failed with message: " + e.getMessage());
 			}
@@ -139,7 +146,10 @@ public abstract class Actions implements Cabinet{
 			byte[] rc = SerializationUtils.serialize ( u );
 			try {
 				channel.basicPublish( "", localOutQueue , true, null, rc );
-				logger.trace("Public to queue " + localOutQueue + " message:  " + u);
+
+				
+		    logger.trace("Public to queue " + localOutQueue + " message command:  " + u.getCommand() + " routing key: " + u.getRoutingKey());
+
 			} catch (IOException e) {
 				logger.error("Error! Public to queue localin failed with message: " + e.getMessage());
 			}

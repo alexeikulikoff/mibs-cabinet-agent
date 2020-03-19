@@ -16,3 +16,14 @@
 2020-02-12 14:38:15,574 ERROR m.i.c.Actions [pool-4-thread-1] Error! Folder   not foumd with message: gradle (Отказано в доступе)
 2020-02-12 14:38:15,577 ERROR m.i.c.Actions [pool-4-thread-1] Error! Folder   not foumd with message: src (Отказано в доступе)
 2020-02-12 14:47:56,059 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 02:47:56 12 фев 2020
+2020-02-13 14:16:11,819 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 02:16:11 13 фев 2020
+2020-02-13 14:17:31,349 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 02:17:31 13 фев 2020
+2020-02-17 12:43:05,815 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 12:43:05 17 фев 2020
+2020-02-17 12:43:06,082 ERROR m.i.c.Actions [pool-4-thread-1] Error! Public to queue amq.direct failed with message: F:\DicomArchive\_Avdonichev_V_N_071-001-0028652: Устройство не готово.
+
+2020-02-17 14:18:39,960 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 02:18:39 17 фев 2020
+2020-03-16 16:06:32,778 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 04:06:32 16 мар 2020
+2020-03-16 16:06:58,134 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 04:06:58 16 мар 2020
+2020-03-19 14:34:23,393 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 02:34:23 19 мар 2020
+2020-03-19 14:37:41,639 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 02:37:41 19 мар 2020
+2020-03-19 15:29:17,948 TRACE m.i.c.Actions [AWT-EventQueue-0] Application started at 03:29:17 19 мар 2020
